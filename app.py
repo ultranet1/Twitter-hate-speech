@@ -5,7 +5,7 @@ import sklearn
 from models import get_history, create_history
 
 
-pipeline = load("C:/Users/HP/hate_tweets_proj/model_classification.joblib")
+pipeline = load("model_classification.joblib")
 
 app = Flask(__name__)
 CORS(app)
