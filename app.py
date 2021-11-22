@@ -7,7 +7,7 @@ from models import get_history, create_history
 
 pipeline = load("model_classification.joblib")
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='templates')
 CORS(app)
 @app.route('/', methods=["GET", "POST"])
 def main():
