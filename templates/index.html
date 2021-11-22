@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TWITTER HATE-SPEECH DETECTOR</title>
+    <link href="static/CSS/main.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  </head>
+  <body  >
+    <link href="static/CSS/main.css" rel="stylesheet" >
+     <div class="section">
+       <h1><span>TWITTER HATE-SPEECH DETECTOR</span></h1>
+       <form action='/' method='POST'>
+        <input name="inp" type = "text" placeholder="Type tweet" /><br/>
+        <input type="submit" value="ANALYZE" class="submit" />
+       </form>
+    </div>
+  </body>
+  <body  >
+    <link href="static/CSS/main.css" rel="stylesheet" >
+     <div class="section">
+       <h1>OUTPUT; </h1>
+        <h2>{{message}}</h2>
+       <h3>{{pred}}{{prob}}{{percent}}</h3>
+    </div>
+  </body>
+  <body  >
+    <link href="static/CSS/main.css" rel="stylesheet" >
+     <div class="section">
+       <h1>HISTORY; </h1>
+       <ul>{{history2}}</ul>
+  </body>
+</html>

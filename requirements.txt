@@ -1,0 +1,6 @@
+Flask
+gunicorn
+joblib
+sklearn
+sqlite3
+os
