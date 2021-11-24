@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 from flask_cors import CORS
 from joblib import load
 import sklearn
+import re
 import nltk.corpus
 from nltk.stem import WordNetLemmatizer
 from nltk import tokenize
