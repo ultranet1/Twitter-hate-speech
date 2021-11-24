@@ -4,3 +4,4 @@ gunicorn
 joblib
 sklearn
 nltk
+regex
