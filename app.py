@@ -12,9 +12,11 @@ CORS(app)
 @app.route('/', methods=["GET", "POST"])
 def main():
     if request.method == "POST":
-        inp = request.form.get("inp")
-        res = pipeline.predict([inp])
-        proba= ((pipeline.predict_proba([inp]))[0])[0] * 100
+        inp = [request.form.get("inp")]
+        # Lemmatize
+        text = [''.join([WordNetLemmatizer().lemmatize(re.sub('[^A-Za-z]',' ',text)) for text in lis]) for lis in inp]
+        res = pipeline.predict(text)
+        proba= ((pipeline.predict_proba(text))[0])[0] * 100
         history = request.form.get("inp")
         history1 = create_history(history)
         percent = " %"
