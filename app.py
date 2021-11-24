@@ -2,6 +2,13 @@ from flask import Flask, render_template, request
 from flask_cors import CORS
 from joblib import load
 import sklearn
+import nltk.corpus
+from nltk.stem import WordNetLemmatizer
+from nltk import tokenize
+from nltk.tokenize import sent_tokenize,word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from nltk import tokenize
 from models import get_history, create_history
 
 
