@@ -10,7 +10,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk import tokenize
 from models import get_history, create_history
-
+# This will take some time
+nltk.download("all")
 
 pipeline = load("model_classification.joblib")
 
